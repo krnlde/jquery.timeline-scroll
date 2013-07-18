@@ -1,0 +1,28 @@
+.timelineScroll {
+  position: fixed;
+  top: 0px;
+  right: 0;
+  bottom: 0px;
+  opacity: 0;
+  width: 170px;
+  margin: 17px 0;
+  overflow: hidden;
+  transition: .5s opacity  linear;
+}
+
+.timelineScroll.active {
+  opacity: 1;
+}
+
+.timelineScroll li {
+    width: 100%;
+    display: block;
+    position: absolute;
+    text-align: right;
+    padding-right: 11px;
+}
+
+.timelineScroll li a {
+  padding: 1px 4px;
+  background-color: rgba(255, 255, 255, .8);
+}
